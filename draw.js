@@ -34,7 +34,7 @@ function infinito()
         stroke="lightgrey"
         d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
 
-    <circle r="5" fill="red">
+    <circle r="5" fill="darkorange">
         <animateMotion
         dur="10s"
         repeatCount="indefinite"
@@ -53,7 +53,7 @@ function circulo()
 
     <circle cx="50" cy="50" r="45" 
     fill="lightgray"
-    stroke="red"
+    stroke="green"
     />
     
 </svg>`

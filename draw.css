@@ -46,6 +46,24 @@ a
     align-items: center;
 }
 
+#div_grid
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#div_grid p
+{
+    width: 600px;
+}
+
+hr
+{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
 #code_window 
 {
     white-space: pre;
@@ -66,11 +84,11 @@ a
     font-size: 80%;
 }
 
-#codigo h3
+h3
 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 #espaco_svg
