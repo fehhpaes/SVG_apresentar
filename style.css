@@ -1,0 +1,73 @@
+
+html{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+    align-items: center;
+
+}
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+        flex-wrap: wrap;
+        
+        width: 50%;
+
+        background-color: gainsboro;
+        
+
+    }
+    
+
+    h1, h2, h3,h4{
+
+        text-align: center;
+        margin-top: 5%;
+
+    }
+
+    li{
+        margin-bottom: 5%;
+
+
+    }
+
+    #btn_proximo{
+
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+        margin-top: 5%;
+
+
+    }
+
+    #div_img_ex_resolucao{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+    }
+    #div_img_ex_tamanho{
+
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+    }
+    img {width:45%;
+    }
+
+
+
