@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usos: PNG x SVG</title>
+    <link rel="stylesheet" href="draw.css">
 </head>
 <body>
 
@@ -21,6 +22,7 @@
         }
         .container{
 
+            color: black;
             display: flex;
             flex-direction: column;
             
@@ -36,7 +38,7 @@
         h1, h2, h3,h4{
 
             text-align: center;
-            margin-top: 5%;
+            
 
         }
 
@@ -71,16 +73,37 @@
             text-align: center;
 
         }
+        #li_li{
+            color: black;
+        }
 
-
+      
+        #btn_btn{
+            margin-left: 5%;
+            margin-right: 5%;
+            color: black;
+        }
 
     </style>
+
+<header>
+    <nav>
+        <ul>
+            <a href="Index.html"><li>O que é</li></a>
+            <a href="quando_usar.html"><li>Para que Serve</li></a>
+            <a href="pro_contra.html"><li>Pros e Contras</li></a>
+            <a href=""><li>Exemplos do Google Fonts e Boostrap</li></a>
+            <a href=""><li>Mais Exemplos</li></a>
+            <a href="demonstracao_draw.html"><li>Explicando o Código</li></a>
+        </ul>
+    </nav>
+</header>
 
 
 
     <div class="container">
 
-        <div class="row">
+        <div>
             <h1> Tipo de usos, qual escolher?</h1>
         </div>
        
@@ -94,13 +117,13 @@
                 
 
                 <h3>Fotografia</h3>
-                <li>Os arquivos PNG não são uma escolha comum para fotos online. No entanto, eles podem processar fotos digitais de alta qualidade e muito detalhadas para impressão, edição, entre outras finalidades.
+                <li id="li_li">Os arquivos PNG não são uma escolha comum para fotos online. No entanto, eles podem processar fotos digitais de alta qualidade e muito detalhadas para impressão, edição, entre outras finalidades.
 
                     Os SVGs, por outro lado, não usam pixels, então têm dificuldades para exibir fotos em um padrão alto.
                 </li>
 
                 <h3>Uso na Web</h3>
-                <li>Arquivos PNG e SVG podem exibir detalhes complexos de gráficos, ilustrações, logotipos, infográficos e tabelas na Web.
+                <li id="li_li">Arquivos PNG e SVG podem exibir detalhes complexos de gráficos, ilustrações, logotipos, infográficos e tabelas na Web.
 
                     Porém, os SVGs têm uma vantagem importante: a linguagem de programação XML. Isso significa que cada arquivo SVG exibido está em texto, não código. Como resultado, os leitores de tela e mecanismos de pesquisa podem analisá-los, o que os torna ideais para acessibilidade.
                     
@@ -110,13 +133,13 @@
                 </li>
 
                 <h3>Compatibilidade e complexidade</h3>
-                <li>O formato SVG é considerado um tipo de arquivo mais avançado que o PNG, mas não é compatível com todos os navegadores (somente com os mais novos) e sistemas operacionais. Além disso, a linguagem de programação e a composição vetorial do SVG podem ser desconhecidas e difíceis para novos usuários.
+                <li id="li_li">O formato SVG é considerado um tipo de arquivo mais avançado que o PNG, mas não é compatível com todos os navegadores (somente com os mais novos) e sistemas operacionais. Além disso, a linguagem de programação e a composição vetorial do SVG podem ser desconhecidas e difíceis para novos usuários.
 
                     Os PNGs, por outro lado, são um formato online padrão com suporte amplo dos navegadores e sistemas operacionais.
                 </li>
 
                 <h3>Animação</h3>
-                <li>Os arquivos PNG não são compatíveis com animações, ao contrário de um arquivo de imagem rasterizado similar, o GIF.
+                <li id="li_li">Os arquivos PNG não são compatíveis com animações, ao contrário de um arquivo de imagem rasterizado similar, o GIF.
 
                     Os arquivos SVG aceitam animações, mas não são facilmente acessíveis como outros formatos.
                 </li>
@@ -124,7 +147,7 @@
 
 
                 <h3>Transparência</h3>
-                <li>Os PNGs e SVGs oferecem transparência, então são ótimas escolhas para gráficos e logotipos online.
+                <li id="li_li">Os PNGs e SVGs oferecem transparência, então são ótimas escolhas para gráficos e logotipos online.
 
                     É importante mencionar que os PNGs são uma das melhores opções para arquivos rasterizados transparentes. Se você trabalha com pixels e transparência, os PNGs são uma opção melhor que os SVGs.
                 </li>
@@ -140,8 +163,8 @@
 
          <div class="row" id="btn_proximo">
 
-            <button type="submit"><a href="diferencas_png_svg.html">Anterior</a></button>
-            <button type="submit"><a href="">Próximo</a></button>
+            <button type="submit" id="btn_btn"><a href="diferencas_png_svg.html" id="btn_btn">Anterior</a></button>
+            <button type="submit" id="btn_btn"><a href="" id="btn_btn">Próximo</a></button>
 
          </div>
 

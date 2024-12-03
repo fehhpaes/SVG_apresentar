@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diferenças entre PNG e SVG</title>
+    <link rel="stylesheet" href="draw.css">
 </head>
 <body>
 
@@ -21,6 +22,7 @@
         }
         .container{
 
+            color: black;
             display: flex;
             flex-direction: column;
             
@@ -36,7 +38,7 @@
         h1, h2, h3,h4{
 
             text-align: center;
-            margin-top: 5%;
+            
 
         }
 
@@ -71,10 +73,32 @@
             text-align: center;
 
         }
+        #li_li{
+            color: black;
+        }
 
-
+      
+        #btn_btn{
+            margin-left: 5%;
+            margin-right: 5%;
+            color: black;
+        }
 
     </style>
+
+<header>
+    <nav>
+        <ul>
+            <a href="Index.html"><li>O que é</li></a>
+            <a href="quando_usar.html"><li>Para que Serve</li></a>
+            <a href="pro_contra.html"><li>Pros e Contras</li></a>
+            <a href=""><li>Exemplos do Google Fonts e Boostrap</li></a>
+            <a href=""><li>Mais Exemplos</li></a>
+            <a href="demonstracao_draw.html"><li>Explicando o Código</li></a>
+        </ul>
+    </nav>
+</header>
+
 
 
 
@@ -92,7 +116,7 @@
             <ul>
 
                 <h3>Rasterizado x Vetorial</h3>
-                <li>O PNG é um formato de imagem rasterizado (baseado em pixels). Se você aumentar demais uma imagem rasterizada, ela ficará com um efeito granulado ou pixelizado. Da mesma forma, se a imagem for muito pequena, ela poderá ficar irreconhecível. Os PNGs podem processar resoluções altíssimas, mas não são infinitamente expansíveis.
+                <li id="li_li">O PNG é um formato de imagem rasterizado (baseado em pixels). Se você aumentar demais uma imagem rasterizada, ela ficará com um efeito granulado ou pixelizado. Da mesma forma, se a imagem for muito pequena, ela poderá ficar irreconhecível. Os PNGs podem processar resoluções altíssimas, mas não são infinitamente expansíveis.
 
                     Por outro lado, os arquivos SVG são vetoriais, criados com base uma rede matemática complexa de linhas, pontos, formas e algoritmos. Eles podem ser expandidos para qualquer tamanho sem perder a resolução.
                 </li>
@@ -121,7 +145,7 @@
 
 
                 <h3>Tamanhos de arquivos</h3>
-                <li>Os arquivos PNG geralmente são tão grandes que conseguem processar resoluções altas. Devido ao tamanho, eles levam mais tempo para serem processados, compartilhados, salvos e abertos. Isso também pode aumentar o tempo de carregamento das páginas. É por isso que os arquivos JPEG são mais comuns para fotografia online. No entanto, existe uma variante PNG menor de 8 bits, mas ela só aceita 256 cores.
+                <li id="li_li">Os arquivos PNG geralmente são tão grandes que conseguem processar resoluções altas. Devido ao tamanho, eles levam mais tempo para serem processados, compartilhados, salvos e abertos. Isso também pode aumentar o tempo de carregamento das páginas. É por isso que os arquivos JPEG são mais comuns para fotografia online. No entanto, existe uma variante PNG menor de 8 bits, mas ela só aceita 256 cores.
 
                     Os arquivos SVG são muito menores que os PNGs e não costumam deixar seu computador ou site lento. (No entanto, designs muito detalhados podem deixar o arquivo SVG lento.) Como os SVGs são vetoriais, é possível redimensioná-los sem perder a qualidade.
                 </li>
@@ -135,7 +159,7 @@
 
                 
                 <h3>Compactação</h3>
-                <li>Os arquivos SVG oferecem compactação sem perdas, ou seja, eles podem ser diminuídos sem perder definição, detalhes ou qualidade.
+                <li id="li_li">Os arquivos SVG oferecem compactação sem perdas, ou seja, eles podem ser diminuídos sem perder definição, detalhes ou qualidade.
 
                     Os arquivos PNG também oferecem uma compactação sem perdas de 5% a 20%, o que compensa o tamanho grande deles. No entanto, eles provavelmente ainda serão maiores que os SVGs.
                 </li>
@@ -151,9 +175,9 @@
 
          <div class="row" id="btn_proximo">
 
-            <button type="submit"><a href="pro_contra.html">Anterior</a></button>
+            <button type="submit" id="btn_btn"><a href="pro_contra.html" id="btn_btn">Anterior</a></button>
 
-            <button type="submit"><a href="tipos_de_uso_png_svg.html">Próximo</a></button>
+            <button type="submit" id="btn_btn"><a href="tipos_de_uso_png_svg.html" id="btn_btn">Próximo</a></button>
 
          </div>
 

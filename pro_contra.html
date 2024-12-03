@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG: Prós e contras</title>
+
+    <link rel="stylesheet" href="draw.css">
 </head>
 <body>
 
@@ -21,6 +23,7 @@
         }
         .container{
 
+            color: black;
             display: flex;
             flex-direction: column;
             
@@ -36,7 +39,7 @@
         h1, h2, h3,h4{
 
             text-align: center;
-            margin-top: 5%;
+            
 
         }
 
@@ -71,44 +74,69 @@
             text-align: center;
 
         }
+        #li_li{
+            color: black;
+        }
 
-
+      
+        #btn_btn{
+            margin-left: 5%;
+            margin-right: 5%;
+            color: black;
+        }
 
     </style>
+
+
+<header>
+    <nav>
+        <ul>
+            <a href="Index.html"><li>O que é</li></a>
+            <a href="quando_usar.html"><li>Para que Serve</li></a>
+            <a href="pro_contra.html"><li>Pros e Contras</li></a>
+            <a href=""><li>Exemplos do Google Fonts e Boostrap</li></a>
+            <a href=""><li>Mais Exemplos</li></a>
+            <a href="demonstracao_draw.html"><li>Explicando o Código</li></a>
+        </ul>
+    </nav>
+</header>
+
 
 
 
     <div class="container">
 
-        <div class="row">
+        <div >
             <h1> SVG: Prós e contras</h1>
-        </div>
-        <div class="row">
             <h2> Vantagens dos arquivos SVG: </h2>
+        </div>
+        
+            <div>
         
             <ul>
-                <li>
+                <li id="li_li">
                 Ao contrário dos arquivos que são compostos de pixels (rasterizado), gráficos vetoriais como SVGs sempre mantêm sua resolução, não importa quão grandes ou pequenos eles sejam. Você não precisa se preocupar com imagens SVG perdendo sua qualidade em certos navegadores ou quando as redimensiona para aparecerem em lugares diferentes.
                 </li>
                 
-                <li>
+                <li id="li_li">
                     Os arquivos SVG básicos geralmente são menores que as imagens rasterizadas, as quais são construídas a partir de muitos pixels coloridos em vez de usar algoritmos matemáticos.
                 </li>
                 
-                <li>
+                <li id="li_li" >
                  Como os arquivos SVG tratam o texto como texto (e não como desenho), os leitores de tela podem escanear qualquer palavra contida nas imagens SVG. Isso é muito útil para as pessoas que precisam de ajuda para ler as páginas da Web. Os mecanismos de pesquisa também podem ler e indexar textos de imagens SVG.
                 </li>
             
             </ul>
+        </div>
 
-         </div>
+        
 
          
 
          <div class="row" id="btn_proximo">
 
-            <button type="submit"><a href="quando_usar.html">Anterior</a></button>
-            <button type="submit"><a href="diferencas_png_svg.html">Próximo</a></button>
+            <button type="submit" id="btn_btn"><a href="quando_usar.html" id="btn_btn">Anterior</a></button>
+            <button type="submit" id="btn_btn"><a href="diferencas_png_svg.html" id="btn_btn">Próximo</a></button>
             
 
          </div>
