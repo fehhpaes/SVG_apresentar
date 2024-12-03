@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="raphael.css">
     <title>ARQUIVOS SVG</title>
 </head>
 
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <a href="Index.html"><li>O que é</li></a>
+                <a href="quando_usar.html"><li>Para que Serve</li></a>
+                <a href="pro_contra.html"><li>Pros e Contras</li></a>
+                <a href=""><li>Exemplos do Google Fonts e Boostrap</li></a>
+                <a href=""><li>Mais Exemplos</li></a>
+                <a href="demonstracao_draw.html"><li>Explicando o Código</li></a>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="container">
             
             
-                <div>
+                <div class="texto">
                     <h1>Arquivos SVG</h1>
                 </div>
                 <div>
@@ -32,14 +46,16 @@
                     <p> ícones mais simples, com menos detalhes e efeitos.
                     </p>
                 </div>
-                <div>
-                    <img src="svg1.png" alt="logotipo starbucks">                                     
+                <div class="image">
+                    <img src="svg1.png" alt="logotipo starbucks">
+                    <img src="svg2.png" alt="logotipo ebay"> 
+                    <img src="svg3.png" alt="logotipo nintendo">                                    
                 </div>
                 <div>
-                    <img src="svg2.png" alt="logotipo ebay">                                     
+                                                         
                 </div>
                 <div>
-                    <img src="svg3.png" alt="logotipo nintendo">                                     
+                                                         
                 </div>
                 <div>
                     <h2>Quando não usar?</h2>
@@ -48,19 +64,16 @@
                     <p> Imagens com muitos detalhes, efeitos e composições mais complexas.
                     </p>
                 </div>
-                <div>
-                    <img src="svg4.png" alt="mozilla">                                     
-                </div>
-                <div>
-                    <img src="shadow.png" alt="shadow sonic">                                     
-                </div>
-                <div>
-                    <img src="mario.jpg" alt="mario nintendo">                                     
+                <div class="image" style="margin-bottom: 50px;">
+                    <img src="svg4.png" alt="mozilla">   
+                    <img src="shadow.png" alt="shadow sonic">   
+                    <img src="mario.jpg" alt="mario nintendo">                                 
                 </div>
 
-                <div class="row" id="btn_proximo">
 
-                    <button type="submit"><a href="quando_usar.html">Próximo</a></button>
+                <div class="row" id="btns">
+
+                    <div></div><button class="btn btn-primary" type="submit"><a href="quando_usar.html">Próximo</a></button>
                     
                  </div>
                  
