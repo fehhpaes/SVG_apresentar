@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferenças entre PNG e SVG</title>
+</head>
+<body>
+
+    <style>
+        html{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            
+            align-items: center;
+
+        }
+        .container{
+
+            display: flex;
+            flex-direction: column;
+            
+            flex-wrap: wrap;
+            
+            width: 1000px;
+
+            background-color: gainsboro;
+            margin-top: 5%;
+
+        }
+
+        h1, h2, h3,h4{
+
+            text-align: center;
+            margin-top: 5%;
+
+        }
+
+        li{
+            margin-bottom: 5%;
+
+
+        }
+
+        #btn_proximo{
+
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+            margin-bottom: 5%;
+
+
+        }
+
+        #div_img_ex_resolucao{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+        }
+        #div_img_ex_tamanho{
+
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+
+
+    </style>
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <h1> Diferenças entre PNG e SVG</h1>
+        </div>
+       
+
+
+         <div class="row">
+            
+
+            <ul>
+
+                <h3>Rasterizado x Vetorial</h3>
+                <li>O PNG é um formato de imagem rasterizado (baseado em pixels). Se você aumentar demais uma imagem rasterizada, ela ficará com um efeito granulado ou pixelizado. Da mesma forma, se a imagem for muito pequena, ela poderá ficar irreconhecível. Os PNGs podem processar resoluções altíssimas, mas não são infinitamente expansíveis.
+
+                    Por outro lado, os arquivos SVG são vetoriais, criados com base uma rede matemática complexa de linhas, pontos, formas e algoritmos. Eles podem ser expandidos para qualquer tamanho sem perder a resolução.
+                </li>
+
+                
+                <h3>Comparativo entre o PNG x SVG em 16dpi </h3> <br>
+                <div class="row" id="div_img_ex_resolucao">
+
+                <div>
+                    <label for="">PNG </label> <p></p>
+                        <img src="img/pro_contra_exemplo/home_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.png" alt="" width="400px"  >
+                    </div>
+                    
+                    <div>
+                        <label for="">SVG </label> <p></p>
+                        <img src="img/pro_contra_exemplo/home_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="" width="400px" >
+                    </div>
+                
+                </div>
+
+                <label for=""> dpi: dots per inch ou pontos por polegadas.</label>
+                <br>
+                <label for="">Fonte das imagens: <br>
+                    https://fonts.google.com/icons?selected=Material+Symbols+Outlined:home:FILL@0;wght@400;GRAD@0;opsz@20&icon.size=16&icon.color=%235f6368 
+                </label>
+
+
+                <h3>Tamanhos de arquivos</h3>
+                <li>Os arquivos PNG geralmente são tão grandes que conseguem processar resoluções altas. Devido ao tamanho, eles levam mais tempo para serem processados, compartilhados, salvos e abertos. Isso também pode aumentar o tempo de carregamento das páginas. É por isso que os arquivos JPEG são mais comuns para fotografia online. No entanto, existe uma variante PNG menor de 8 bits, mas ela só aceita 256 cores.
+
+                    Os arquivos SVG são muito menores que os PNGs e não costumam deixar seu computador ou site lento. (No entanto, designs muito detalhados podem deixar o arquivo SVG lento.) Como os SVGs são vetoriais, é possível redimensioná-los sem perder a qualidade.
+                </li>
+
+                <div id="div_img_ex_tamanho">
+                    <h4>Comparação entre tamanhos de arquivos PNG e SVG</h4>
+                    <img src="img/pro_contra_exemplo/comparacao_tamanho_PNG_SVG.png" alt="" >
+
+
+                </div>
+
+                
+                <h3>Compactação</h3>
+                <li>Os arquivos SVG oferecem compactação sem perdas, ou seja, eles podem ser diminuídos sem perder definição, detalhes ou qualidade.
+
+                    Os arquivos PNG também oferecem uma compactação sem perdas de 5% a 20%, o que compensa o tamanho grande deles. No entanto, eles provavelmente ainda serão maiores que os SVGs.
+                </li>
+
+                
+
+
+
+            </ul>
+
+
+         </div>
+
+         <div class="row" id="btn_proximo">
+
+            <button type="submit"><a href="tipos_de_uso_png_svg.html">Próximo</a></button>
+
+         </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
