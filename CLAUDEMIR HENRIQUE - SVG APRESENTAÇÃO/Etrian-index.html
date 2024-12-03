@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animação SVG</title>
+    <style>
+      svg {
+        border: 1px solid black; /* Adiciona uma borda para visualizar o SVG */
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      width="500"
+      height="300"
+      viewBox="0 0 500 300"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>Exemplo de animação de movimento</title>
+      <desc>
+        Demonstração de animação de um triângulo ao longo de um caminho.
+      </desc>
+
+      <rect
+        x="0"
+        y="0"
+        width="500"
+        height="300"
+        fill="none"
+        stroke="lightgray"
+        stroke-width="2"
+      />
+
+      <path
+        id="path1"
+        d="M100 250 C 100 50 400 50 400 250"
+        fill="none"
+        stroke="blue"
+        stroke-width="2"
+      />
+
+      <circle cx="100" cy="250" r="5" fill="blue" />
+      <circle cx="250" cy="100" r="5" fill="blue" />
+      <circle cx="400" cy="250" r="5" fill="blue" />
+
+      <path
+        id="triangulo"
+        d="M-25 -12.5 L25 -12.5 L 0 -87.5 Z"
+        fill="yellow"
+        stroke="red"
+        stroke-width="2"
+      >
+        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+          <mpath xlink:href="#path1" />
+        </animateMotion>
+      </path>
+    </svg>
+  </body>
+</html>
