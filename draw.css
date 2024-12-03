@@ -23,11 +23,13 @@ li
     color: white;
     border-radius: 30px;
     padding: 10px;
+    font-size: 95%;
 }
 
 li:hover
 {
     background-color: rgb(228, 148, 0);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 a
