@@ -1,0 +1,13 @@
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  fill: #333; /* Cor padrão do ícone */
+}
+
+button:hover svg {
+  fill: #007bff; /* Cor do ícone ao passar o mouse */
+}

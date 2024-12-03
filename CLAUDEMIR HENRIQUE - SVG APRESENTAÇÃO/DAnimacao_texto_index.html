@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animação de Texto em SVG</title>
+    <style>
+      svg {
+        border: 1px solid black;
+        width: 100%; /* Define a largura do corpo da página para 100% da tela */
+        height: 100vh; /* Define a altura para 100% da altura da viewport */
+      }
+      text {
+        opacity: 0;
+        fill: #000;
+        transition: opacity 1s, transform 1s;
+        transform-origin: center;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+      .active {
+        opacity: 1;
+        transform: scale(1.1); /* Increased scale for better visibility */
+        fill: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="0 -25 1 50" xmlns="http://www.w3.org/2000/svg" id="svg">
+      <text systemLanguage="en-us">Howdy!</text>
+      <text systemLanguage="en-gb">Wotcha!</text>
+      <text systemLanguage="en-au">G'day!</text>
+      <text systemLanguage="en">Hello!</text>
+    </svg>
+    <script>
+      const svg = document.getElementById("svg");
+      const texts = svg.querySelectorAll("text");
+      let currentIndex = 0;
+
+      function showNextText() {
+        texts[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % texts.length;
+        texts[currentIndex].classList.add("active");
+      }
+
+      showNextText(); // Mostra o primeiro texto
+      setInterval(showNextText, 2000); // Muda a cada 2 segundos
+    </script>
+  </body>
+</html>
