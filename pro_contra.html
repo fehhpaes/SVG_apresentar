@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG: Prós e contras</title>
+</head>
+<body>
+
+    <style>
+        html{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            
+            align-items: center;
+
+        }
+        .container{
+
+            display: flex;
+            flex-direction: column;
+            
+            flex-wrap: wrap;
+            
+            width: 1000px;
+
+            background-color: gainsboro;
+            
+
+        }
+
+        h1, h2, h3,h4{
+
+            text-align: center;
+            margin-top: 5%;
+
+        }
+
+        li{
+            margin-bottom: 5%;
+
+
+        }
+
+        #btn_proximo{
+
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+            margin-bottom: 5%;
+
+
+        }
+
+        #div_img_ex_resolucao{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+        }
+        #div_img_ex_tamanho{
+
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+
+
+    </style>
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <h1> SVG: Prós e contras</h1>
+        </div>
+        <div class="row">
+            <h2> Vantagens dos arquivo SVG: </h2>
+        
+            <ul>
+                <li>
+                Ao contrário dos arquivos que são compostos de pixels (rasterizado), gráficos vetoriais como SVGs sempre mantêm sua resolução, não importa quão grandes ou pequenos eles sejam. Você não precisa se preocupar com imagens SVG perdendo sua qualidade em certos navegadores ou quando as redimensiona para aparecerem em lugares diferentes.
+                </li>
+                
+                <li>
+                    Os arquivos SVG básicos geralmente são menores que as imagens rasterizadas, as quais são construídas a partir de muitos pixels coloridos em vez de usar algoritmos matemáticos.
+                </li>
+                
+                <li>
+                 Como os arquivos SVG tratam o texto como texto (e não como desenho), os leitores de tela podem escanear qualquer palavra contida nas imagens SVG. Isso é muito útil para as pessoas que precisam de ajuda para ler as páginas da Web. Os mecanismos de pesquisa também podem ler e indexar textos de imagens SVG.
+                </li>
+            
+            </ul>
+
+         </div>
+
+         <div class="row">
+            <h2> Desvantagens dos arquivos SVG: </h2>
+
+            <ul>
+                <li>
+                 Os arquivos SVG são ótimos para gráficos da Web, como logotipos, ilustrações e gráficos. Mas a ausência de pixels dificulta a exibição de fotos digitais de alta qualidade. Os arquivos JPEG são geralmente melhores para fotografias detalhadas.
+                </li>
+
+                <li>
+                    Somente navegadores modernos são compatíveis com imagens SVG. Você pode achar um desafio utilizar arquivos SVG com o Internet Explorer 8 e outros navegadores mais antigos.
+                </li>
+
+                <li>
+                    O código contido nas imagens SVG pode ser difícil de entender se você nunca usou esse formato.
+                </li>
+            </ul>
+         </div>
+
+
+         <div class="row">
+            <h2> Diferenças entre PNG e SVG</h2>
+
+            <ul>
+
+                <h3>Rasterizado x Vetorial</h3>
+                <li>O PNG é um formato de imagem rasterizado (baseado em pixels). Se você aumentar demais uma imagem rasterizada, ela ficará com um efeito granulado ou pixelizado. Da mesma forma, se a imagem for muito pequena, ela poderá ficar irreconhecível. Os PNGs podem processar resoluções altíssimas, mas não são infinitamente expansíveis.
+
+                    Por outro lado, os arquivos SVG são vetoriais, criados com base uma rede matemática complexa de linhas, pontos, formas e algoritmos. Eles podem ser expandidos para qualquer tamanho sem perder a resolução.
+                </li>
+
+                
+                <h3>Comparativo entre o PNG x SVG em 16dpi </h3> <br>
+                <div class="row" id="div_img_ex_resolucao">
+
+                <div>
+                    <label for="">PNG </label> <p></p>
+                        <img src="img/pro_contra_exemplo/home_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.png" alt="" width="450px"  >
+                    </div>
+                    
+                    <div>
+                        <label for="">SVG </label> <p></p>
+                        <img src="img/pro_contra_exemplo/home_16dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="" width="450px" >
+                    </div>
+                
+                </div>
+
+                <label for=""> dpi: dots per inch ou pontos por polegadas.</label>
+                <br>
+                <label for="">Fonte das imagens: <br>
+                    https://fonts.google.com/icons?selected=Material+Symbols+Outlined:home:FILL@0;wght@400;GRAD@0;opsz@20&icon.size=16&icon.color=%235f6368 
+                </label>
+
+
+                <h3>Tamanhos de arquivos</h3>
+                <li>Os arquivos PNG geralmente são tão grandes que conseguem processar resoluções altas. Devido ao tamanho, eles levam mais tempo para serem processados, compartilhados, salvos e abertos. Isso também pode aumentar o tempo de carregamento das páginas. É por isso que os arquivos JPEG são mais comuns para fotografia online. No entanto, existe uma variante PNG menor de 8 bits, mas ela só aceita 256 cores.
+
+                    Os arquivos SVG são muito menores que os PNGs e não costumam deixar seu computador ou site lento. (No entanto, designs muito detalhados podem deixar o arquivo SVG lento.) Como os SVGs são vetoriais, é possível redimensioná-los sem perder a qualidade.
+                </li>
+
+                <div id="div_img_ex_tamanho">
+                    <h4>Comparação entre tamanhos de arquivos PNG e SVG</h4>
+                    <img src="img/pro_contra_exemplo/comparacao_tamanho_PNG_SVG.png" alt="" srcset="">
+
+
+                </div>
+
+                
+                <h3>Compactação</h3>
+                <li>Os arquivos SVG oferecem compactação sem perdas, ou seja, eles podem ser diminuídos sem perder definição, detalhes ou qualidade.
+
+                    Os arquivos PNG também oferecem uma compactação sem perdas de 5% a 20%, o que compensa o tamanho grande deles. No entanto, eles provavelmente ainda serão maiores que os SVGs.
+                </li>
+
+                <h3>Fotografia</h3>
+                <li>Os arquivos PNG não são uma escolha comum para fotos online. No entanto, eles podem processar fotos digitais de alta qualidade e muito detalhadas para impressão, edição, entre outras finalidades.
+
+                    Os SVGs, por outro lado, não usam pixels, então têm dificuldades para exibir fotos em um padrão alto.
+                </li>
+
+                <h3>Uso na Web</h3>
+                <li>Arquivos PNG e SVG podem exibir detalhes complexos de gráficos, ilustrações, logotipos, infográficos e tabelas na Web.
+
+                    Porém, os SVGs têm uma vantagem importante: a linguagem de programação XML. Isso significa que cada arquivo SVG exibido está em texto, não código. Como resultado, os leitores de tela e mecanismos de pesquisa podem analisá-los, o que os torna ideais para acessibilidade.
+                    
+                    Os arquivos SVG também costumam ser menores, o que acelera o carregamento deles nas páginas. O tempo de carregamento é outro elemento fundamental das classificações nos mecanismos de pesquisa.
+                    
+                    Os arquivos PNG também aceitam alguns gráficos de texto, mas não no mesmo nível.
+                </li>
+
+                <h3>Compatibilidade e complexidade</h3>
+                <li>O formato SVG é considerado um tipo de arquivo mais avançado que o PNG, mas não é compatível com todos os navegadores e sistemas operacionais. Além disso, a linguagem de programação e a composição vetorial do SVG podem ser desconhecidas e difíceis para novos usuários.
+
+                    Os PNGs, por outro lado, são um formato online padrão com suporte amplo dos navegadores e sistemas operacionais.
+                </li>
+
+                <h3>Animação</h3>
+                <li>Os arquivos PNG não são compatíveis com animações, ao contrário de um arquivo de imagem rasterizado similar, o GIF.
+
+                    Os arquivos SVG aceitam animações, mas não são facilmente acessíveis como outros formatos.
+                </li>
+
+
+
+                <h3>Transparência</h3>
+                <li>Os PNGs e SVGs oferecem transparência, então são ótimas escolhas para gráficos e logotipos online.
+
+                    É importante mencionar que os PNGs são uma das melhores opções para arquivos rasterizados transparentes. Se você trabalha com pixels e transparência, os PNGs são uma opção melhor que os SVGs.
+                </li>
+
+              
+
+
+
+            </ul>
+
+
+         </div>
+
+         <div class="row" id="btn_proximo">
+
+            <button type="submit">Próximo</button>
+
+         </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
